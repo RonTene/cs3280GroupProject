@@ -1,0 +1,33 @@
+﻿<Window x:Class="GroupProjectPrototype.Main.wndMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupProjectPrototype.Main"
+        mc:Ignorable="d"
+        Title="Invoice System" Height="450" Width="800">
+    <Grid>
+        <Menu x:Name="menu" Height="86" Margin="158,21,155,312" VerticalAlignment="Center" Width="479" HorizontalAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalContentAlignment="Center" Padding="45,17,45,10">
+            <Button x:Name="searchBtn" Content="Search for Invoice" Width="180" FontSize="20" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="1" Click="searchBtn_Click"/>
+            <Button x:Name="itemsBtn" Content="Edit Items" Width="180" FontSize="20" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="1"/>
+        </Menu>
+        <Button x:Name="editInvBtn" Content="Edit Invoice" HorizontalAlignment="Left" Margin="91,288,0,0" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="newInvBtn" Content="New Invoice" HorizontalAlignment="Left" Margin="91,253,0,0" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="saveInvBtn" Content="Save Invoice" HorizontalAlignment="Left" Margin="91,362,0,0" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="deleteItemBtn" Content="Delete Item from Invoice" HorizontalAlignment="Left" Margin="562,327,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="addItemBtn" Content="Add Item to Invoice" HorizontalAlignment="Left" Margin="562,288,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="deleteInvBtn" Content="Delete Invoice" HorizontalAlignment="Left" Margin="91,327,0,0" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="totalCostLbl" Content="Total Cost" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="76" HorizontalContentAlignment="Right"/>
+        <Label x:Name="invDateLbl" Content="Invoice Date" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.595,0.739" Width="76" HorizontalContentAlignment="Right"/>
+        <Label x:Name="invNumLbl" Content="Invoice Number" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Width="76" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="invNumTxt" HorizontalAlignment="Left" Height="23" Margin="91,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" IsEnabled="False"/>
+        <TextBox x:Name="costTxt" HorizontalAlignment="Left" Height="23" Margin="628,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" IsEnabled="False"/>
+        <TextBox x:Name="totalCostTxt" HorizontalAlignment="Left" Height="23" Margin="91,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" IsEnabled="False"/>
+        <TextBox x:Name="invDateTxt" HorizontalAlignment="Left" Height="23" Margin="91,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <ComboBox x:Name="itemsCB" HorizontalAlignment="Left" Margin="562,177,0,0" VerticalAlignment="Top" Width="202"/>
+        <DataGrid x:Name="itemsDG" HorizontalAlignment="Left" Height="256" Margin="279,126,0,0" VerticalAlignment="Top" Width="251"/>
+        <Label x:Name="costLbl" Content="Item Cost" HorizontalAlignment="Left" Margin="562,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="itemLbl" Content="Items" HorizontalAlignment="Left" Margin="562,146,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

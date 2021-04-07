@@ -1,0 +1,18 @@
+﻿<Window x:Name="Search" x:Class="GroupProjectPrototype.Search.wndSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupProjectPrototype"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="searchListBox" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="563"/>
+        <Label x:Name="invoiceNumLabel" Content="Invoice Number:" HorizontalAlignment="Left" Margin="587,107,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="invoiceNumSelect" HorizontalAlignment="Left" Margin="587,138,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="InvoiceCostLabel" Content="Total Cost:" HorizontalAlignment="Left" Margin="587,184,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="InvoiceCostSelect" HorizontalAlignment="Left" Margin="587,215,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="invoiceDateLabel" Content="Invoice Date:" HorizontalAlignment="Left" Margin="587,242,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="invoiceDateSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="587,273,0,0" Width="120"/>
+    </Grid>
+</Window>
