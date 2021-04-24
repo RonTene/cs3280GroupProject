@@ -42,7 +42,8 @@ namespace GroupProjectPrototype.Main
                 itemsWnd = new Items.wndItems();
                 logic = new clsMainLogic();
                 //Ron Tene changes: added ref keywork to reference pass, moved below logic so that logic.currentInvID actually exists
-                searchWnd = new Search.wndSearch(ref logic.currentInvID);
+                //actually, I changed it to use a static value in the wndsearch class
+                searchWnd = new Search.wndSearch();
                 //We bind the items combo box to a list returned containing all items.
                 itemsCB.ItemsSource = logic.GetItemList();
                 //We bind the data grid of lineItems to the lineItem list in the logic class.
@@ -72,6 +73,7 @@ namespace GroupProjectPrototype.Main
                     originalInvoice = (String)logic.currentInvID.Clone();
                 }
                 searchWnd.ShowDialog();
+                logic.currentInvID = Search.wndSearch.invoiceID;
                 if (originalInvoice != "") {
                     if (!originalInvoice.Equals(logic.currentInvID)) {
                         ViewInvoice();

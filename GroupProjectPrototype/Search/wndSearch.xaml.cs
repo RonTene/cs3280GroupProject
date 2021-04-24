@@ -27,8 +27,7 @@ namespace GroupProjectPrototype.Search
         /// </summary>
         public int selectedInvoiceID;
 
-        
-        string invoiceID;
+        public static string invoiceID;
 
         /// <summary>
         /// a boolean indicating whether the 
@@ -49,7 +48,7 @@ namespace GroupProjectPrototype.Search
         /// the default constructor for this class
         /// </summary>
         /// <param name="ID">a reference string to pass back the index ID</param>
-        public wndSearch(ref string ID)
+        public wndSearch()
         {
             InitializeComponent();
             driver = new clsSearchLogic();
@@ -60,8 +59,7 @@ namespace GroupProjectPrototype.Search
             invoiceNumSelect.SelectedIndex = -1;
             InvoiceCostSelect.SelectedIndex = -1;
 
-            //this should make invoiceID a reference as well
-            invoiceID = ID;
+
 
             rowSelected = false;
 
@@ -82,8 +80,10 @@ namespace GroupProjectPrototype.Search
         /// <param name="e"></param>
         private void Search_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            e.Cancel = true;
-            this.Hide();
+            //the current implementation means that we can't prevent search from disposing without making main hang indefinitely,
+            //but I'm just commentign out the method rather than deleting in case we change our minds later.
+            //e.Cancel = true;
+            //this.Hide();
         }
         
 
