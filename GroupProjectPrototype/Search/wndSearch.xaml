@@ -5,14 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GroupProjectPrototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Closing="Search_Closing">
     <Grid>
-        <ListBox x:Name="searchListBox" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="563"/>
-        <Label x:Name="invoiceNumLabel" Content="Invoice Number:" HorizontalAlignment="Left" Margin="587,107,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="invoiceNumSelect" HorizontalAlignment="Left" Margin="587,138,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="InvoiceCostLabel" Content="Total Cost:" HorizontalAlignment="Left" Margin="587,184,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="InvoiceCostSelect" HorizontalAlignment="Left" Margin="587,215,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="invoiceDateLabel" Content="Invoice Date:" HorizontalAlignment="Left" Margin="587,242,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="invoiceDateSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="587,273,0,0" Width="120"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="615*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="149*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="invoiceNumLabel" Content="Invoice Number:" HorizontalAlignment="Left" Margin="587,107,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <ComboBox x:Name="invoiceNumSelect" HorizontalAlignment="Left" Margin="587,138,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3" SelectionChanged="filters_changed"/>
+        <Label x:Name="InvoiceCostLabel" Content="Total Cost:" HorizontalAlignment="Left" Margin="587,184,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <ComboBox x:Name="InvoiceCostSelect" HorizontalAlignment="Left" Margin="587,215,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3" SelectionChanged="filters_changed"/>
+        <Label x:Name="invoiceDateLabel" Content="Invoice Date:" HorizontalAlignment="Left" Margin="587,242,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <DatePicker x:Name="invoiceDateSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="587,273,0,0" Width="120" Grid.ColumnSpan="3" SelectedDateChanged="filters_changed"/>
+        <DataGrid x:Name="dataDisplay" HorizontalAlignment="Left" Height="399" VerticalAlignment="Top" Width="572" Margin="10,10,0,0" CanUserAddRows="False" CurrentCellChanged="dataDisplay_CurrentCellChanged"/>
+        <Button x:Name="submitButton" Grid.ColumnSpan="3" Content="Select" HorizontalAlignment="Left" Margin="589,333,0,0" VerticalAlignment="Top" Width="76" Click="submitButton_Click"/>
+        <Button x:Name="clearButton" Content="Clear Selection" HorizontalAlignment="Right" Margin="0,333,10,0" VerticalAlignment="Top" Width="94" Grid.Column="2" Click="clearButton_Click"/>
     </Grid>
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GroupProjectPrototype.Search;
 
 namespace GroupProjectPrototype.Main
 {
@@ -21,7 +22,7 @@ namespace GroupProjectPrototype.Main
     /// </summary>
     public partial class wndMain : Window
     {
-        //wndSearch searchWnd; //This creates an instance variable of a search window to let us pass data between forms.
+        wndSearch searchWnd; //This creates an instance variable of a search window to let us pass data between forms.
         //wndItems itemsWnd; //This creates an instance variable of a item window to allow data passing.
 
         /// <summary>
@@ -29,6 +30,7 @@ namespace GroupProjectPrototype.Main
         /// </summary>
         public wndMain()
         {
+                
             try
             {
                 InitializeComponent();
@@ -36,13 +38,20 @@ namespace GroupProjectPrototype.Main
                  * We initialize our search window and pass this instance of the form through so that the search window
                  * can call public methods in this form to let us pass data back and forth via methods.
                  */
-                //searchWnd = new wndSearch(this);
+
+                //temporary code to test search window (Ron Tene)
+                searchWnd = new wndSearch();
+                searchWnd.Show();
+                //end of temporary code
+
+
+
                 //itemsWnd = new wndItems(this);
             }
             catch (Exception ex)
             {
-                throw new Exception(MethodInfo.GetCurrentMethod().DeclaringType.Name + "." +
-                                    MethodInfo.GetCurrentMethod().Name + " -> " + ex.Message);
+                HandleError(MethodInfo.GetCurrentMethod().DeclaringType.Name,
+                                MethodInfo.GetCurrentMethod().Name, ex.Message);
             }
         }
 
