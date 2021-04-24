@@ -27,6 +27,9 @@ namespace GroupProjectPrototype.Search
         /// </summary>
         public int selectedInvoiceID;
 
+        
+        string invoiceID;
+
         /// <summary>
         /// a boolean indicating whether the 
         /// </summary>
@@ -45,7 +48,8 @@ namespace GroupProjectPrototype.Search
         /// <summary>
         /// the default constructor for this class
         /// </summary>
-        public wndSearch()
+        /// <param name="ID">a reference string to pass back the index ID</param>
+        public wndSearch(ref string ID)
         {
             InitializeComponent();
             driver = new clsSearchLogic();
@@ -55,6 +59,9 @@ namespace GroupProjectPrototype.Search
             //make the default selection blank
             invoiceNumSelect.SelectedIndex = -1;
             InvoiceCostSelect.SelectedIndex = -1;
+
+            //this should make invoiceID a reference as well
+            invoiceID = ID;
 
             rowSelected = false;
 
@@ -194,6 +201,12 @@ namespace GroupProjectPrototype.Search
             DataRowView selected = (DataRowView) dataDisplay.SelectedItem;
             selectedInvoiceID = int.Parse(selected.Row[0].ToString());
             invoiceSelected = true;
+
+            
+            //technically this is doubling up the ways the main can access the invoice ID, but it works so I don't really care that it's
+            //not completely efficient
+            invoiceID = selectedInvoiceID.ToString();
+            
             //close the form once an index is selected
             this.Close();
         }
