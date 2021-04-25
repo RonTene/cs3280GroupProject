@@ -35,3 +35,48 @@ C:\Users\yjotyrrm\Downloads\GroupProjectPrototype\GroupProjectPrototype\GroupPro
 C:\Users\yjotyrrm\Downloads\GroupProjectPrototype\GroupProjectPrototype\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.csproj.GenerateResource.cache
 C:\Users\yjotyrrm\Downloads\GroupProjectPrototype\GroupProjectPrototype\GroupProjectPrototype\obj\Debug\Search\wndSearch.g.cs
 C:\Users\yjotyrrm\Downloads\GroupProjectPrototype\GroupProjectPrototype\GroupProjectPrototype\obj\Debug\Search\wndSearch.baml
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.csprojAssemblyReference.cache
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\Items\wndItems.g.cs
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\Main\wndMain.g.cs
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\Search\wndSearch.g.cs
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\App.g.cs
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype_Content.g.cs
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype_MarkupCompile.cache
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype_MarkupCompile.lref
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.exe
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.pdb
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\bin\Debug\Invoice.mdb
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\bin\Debug\GroupProjectPrototype.exe.config
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\bin\Debug\GroupProjectPrototype.exe
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\bin\Debug\GroupProjectPrototype.pdb
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\Items\wndItems.baml
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\Main\wndMain.baml
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\Search\wndSearch.baml
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.g.resources
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.Properties.Resources.resources
+C:\Users\yjotyrrm\Documents\cs3280\group project\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.csproj.GenerateResource.cache
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\bin\Debug\Invoice.mdb
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\bin\Debug\GroupProjectPrototype.exe.config
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\bin\Debug\GroupProjectPrototype.exe
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\bin\Debug\GroupProjectPrototype.pdb
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.csprojAssemblyReference.cache
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\Items\wndItems.g.cs
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\Main\wndMain.g.cs
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\Search\wndSearch.g.cs
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\App.g.cs
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype_Content.g.cs
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype_MarkupCompile.cache
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype_MarkupCompile.lref
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\Items\wndItems.baml
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\Main\wndMain.baml
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\Search\wndSearch.baml
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.g.resources
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.Properties.Resources.resources
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.csproj.GenerateResource.cache
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.csproj.CoreCompileInputs.cache
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.exe
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\GroupProjectPrototype.pdb
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\WhistlerBlue.baml
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\App.baml
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\ExpressionDark.baml
+C:\Users\danst\Downloads\cs3280GroupProject-RonTene\GroupProjectPrototype\obj\Debug\BureauBlack.baml

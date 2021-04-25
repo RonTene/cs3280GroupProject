@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GroupProjectPrototype.Main
 {
     /// <summary>
     /// This class contains all the sql statements that will be needed for this window.
-    /// Created by Daniel Stagg
     /// </summary>
     public class clsMainSQL
     {
@@ -19,12 +14,11 @@ namespace GroupProjectPrototype.Main
         /// </summary>
         /// <param name="sInvoiceID">The InvoiceID for the invoice to retrieve all data.</param>
         /// <returns>All data for the given invoice.</returns>
-        public string SelectInvoiceData(string sInvoiceID)
+        public string SelectInvoice(string sInvoiceID)
         {
             try
             {
-                string sSQL = "SELECT * FROM Invoices WHERE InvoiceNum = " + sInvoiceID;
-                return sSQL;
+                return "SELECT * FROM Invoices WHERE InvoiceNum = " + sInvoiceID;
             }
             catch (Exception ex)
             {
@@ -37,12 +31,11 @@ namespace GroupProjectPrototype.Main
         /// This SQL statement returns every piece of data for every item in the system.
         /// </summary>
         /// <returns>Returns all data from every item.</returns>
-        public string SelectItemData()
+        public string SelectItems()
         {
             try
             {
-                string sSQL = "SELECT * FROM ItemDesc";
-                return sSQL;
+                return "SELECT * FROM ItemDesc";
             }
             catch (Exception ex)
             {
@@ -57,14 +50,13 @@ namespace GroupProjectPrototype.Main
         /// </summary>
         /// <param name="sInvoiceID">This is the Invoice's ID which is used so we can find every item under an invoice.</param>
         /// <returns>All items that are part of an invoice</returns>
-        public string SelectInvoiceItems(String sInvoiceID)
+        public string SelectLineItems(String sInvoiceID)
         {
             try
             {
-                string sSQL = "SELECT LineItems.LineItemNum, LineItems.ItemCode, ItemDesc.ItemDesc, ItemDesc.Cost " +
+                return "SELECT LineItems.LineItemNum, LineItems.ItemCode, ItemDesc.ItemDesc, ItemDesc.Cost " +
                     "FROM LineItems, ItemDesc " +
                     "Where LineItems.ItemCode = ItemDesc.ItemCode And LineItems.InvoiceNum = "+ sInvoiceID;
-                return sSQL;
             }
             catch (Exception ex)
             {
@@ -83,8 +75,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "INSERT INTO Invoices (InvoiceDate, TotalCost) Values ('#"+date+"#', "+totalCost+")";
-                return sSQL;
+                return "INSERT INTO Invoices(InvoiceDate, TotalCost) Values(#"+date+"#, "+totalCost+")";
             }
             catch (Exception ex)
             {
@@ -104,9 +95,8 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "INSERT INTO LineItems (InvoiceNum, LineItemNum, ItemCode) " +
-                    "Values ("+invoiceNum+", "+lineItemNum+", "+itemCode+")";
-                return sSQL;
+                return "INSERT INTO LineItems (InvoiceNum, LineItemNum, ItemCode) " +
+                    "Values ("+invoiceNum+", "+lineItemNum+", '"+itemCode+"')";
             }
             catch (Exception ex)
             {
@@ -124,8 +114,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "DELETE From Invoices WHERE InvoiceNum = "+invoiceNum;
-                return sSQL;
+                return "DELETE From Invoices WHERE InvoiceNum = "+invoiceNum;
             }
             catch (Exception ex)
             {
@@ -143,8 +132,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "DELETE From LineItems WHERE InvoiceNum = " + invoiceNum;
-                return sSQL;
+                return "DELETE From LineItems WHERE InvoiceNum = " + invoiceNum;
             }
             catch (Exception ex)
             {
@@ -162,8 +150,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "DELETE From LineItems WHERE LineItemNum = " + lineItemNum;
-                return sSQL;
+                return "DELETE From LineItems WHERE LineItemNum = " + lineItemNum;
             }
             catch (Exception ex)
             {
@@ -182,8 +169,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "UPDATE Invoices SET TotalCost = "+totalCost+" WHERE InvoiceNum = " + invoiceNum;
-                return sSQL;
+                return "UPDATE Invoices SET TotalCost = "+totalCost+" WHERE InvoiceNum = " + invoiceNum;
             }
             catch (Exception ex)
             {
@@ -202,8 +188,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "UPDATE Invoices SET InvoiceDate = #" + date + "# WHERE InvoiceNum = " + invoiceNum;
-                return sSQL;
+                return "UPDATE Invoices SET InvoiceDate = #" + date + "# WHERE InvoiceNum = " + invoiceNum;
             }
             catch (Exception ex)
             {
@@ -221,10 +206,9 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "SELECT SUM(i.Cost) FROM ItemDesc i" +
-                    "inner join LineItems l on l.ItemCode = i.ItemCode" +
-                    "where l.InvoiceNum = " + invoiceNum;
-                return sSQL;
+                return "SELECT SUM(i.Cost) " +
+                    "FROM ItemDesc i, LineItems l " +
+                    "WHERE i.ItemCode = l.ItemCode AND l.InvoiceNum = " + invoiceNum;
             }
             catch (Exception ex)
             {
@@ -242,8 +226,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "SELECT MAX(InvoiceNum) FROM Invoices";
-                return sSQL;
+                return "SELECT MAX(InvoiceNum) FROM Invoices";
             }
             catch (Exception ex)
             {
@@ -262,8 +245,7 @@ namespace GroupProjectPrototype.Main
         {
             try
             {
-                string sSQL = "SELECT MAX(LineItemNum) FROM LineItems";
-                return sSQL;
+                return "SELECT MAX(LineItemNum) FROM LineItems";
             }
             catch (Exception ex)
             {
